@@ -143,7 +143,7 @@
   .h4 {
     @apply text-2xl font-semibold;
   }
-  /* .container {
-    @apply px-12 mx-auto;
-  } */
+  .container {
+    @apply px-12;
+  }
 }

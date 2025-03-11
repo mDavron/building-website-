@@ -21,24 +21,24 @@ const Links = [
     name: "contact",
     path: "contact",
   },
-  {
-    name: "faq",
-    path: "faq",
-  },
-  {
-    name: "stats",
-    path: "stats",
-  },
-  {
-    name: "testimonials",
-    path: "testimonials",
-  },
+  // {
+  //   name: "faq",
+  //   path: "faq",
+  // },
+  // {
+  //   name: "stats",
+  //   path: "stats",
+  // },
+  // {
+  //   name: "testimonials",
+  //   path: "testimonials",
+  // },
 ];
 const Header = () => {
   return (
     <header className="py-4 bg-primary sticky top-0">
       <div className="container mx-auto">
-        <ul className="flex items-center justify-center gap-12 text-secondary">
+        <ul className="flex items-center gap-12 text-secondary">
           {Links.map((link, index) => {
             return (
               <li key={index}>
