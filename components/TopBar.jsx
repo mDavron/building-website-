@@ -1,5 +1,5 @@
 const TopBar = () => {
-  return <section>TopBar</section>;
+  return <section id="home">TopBar</section>;
 };
 
 export default TopBar;

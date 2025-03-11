@@ -1,5 +1,9 @@
 const Stats = () => {
-  return <div>Stats</div>;
+  return (
+    <div className="h-screen bg-lime-400" id="stats">
+      Stats
+    </div>
+  );
 };
 
 export default Stats;

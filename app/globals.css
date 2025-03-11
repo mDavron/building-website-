@@ -133,6 +133,7 @@
   .h1 {
     @apply text-[40px] xl:text-[54px] uppercase font-black leading-[1.1];
   }
+
   .h2 {
     @apply text-[36px] leading-[1.3] xl:text-[46px] capitalize font-bold;
   }
@@ -142,4 +143,7 @@
   .h4 {
     @apply text-2xl font-semibold;
   }
+  /* .container {
+    @apply px-12 mx-auto;
+  } */
 }
