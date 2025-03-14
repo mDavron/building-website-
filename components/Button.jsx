@@ -3,7 +3,9 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 const Button = ({ text, bgcolor, textColor }) => {
   return (
     <button
-      className={`${bgcolor} ${textColor} w-[200px] h:[54px] py-[5px] pl-[10px] pr-[5px] flex items-center justify-between min-w[200px] group`}
+      className={`${
+        bgcolor || "bg-chart-4"
+      } ${textColor} w-[200px] h:[54px] py-[5px] pl-[10px] pr-[5px] flex items-center justify-between min-w[200px] group`}
     >
       <div className="flex-1 text-center tracking-[1.2px] font-primary font-bold text-sm uppercase">
         {text}
