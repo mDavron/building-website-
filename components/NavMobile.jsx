@@ -16,7 +16,7 @@ import { Link as ScrollLink } from "react-scroll";
 const NavMobile = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="xl:hidden">
+    <div className="xl:hidden z-50">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger
           onClick={() => setIsOpen(true)}

@@ -37,7 +37,7 @@ const Links = [
 ];
 const Header = () => {
   return (
-    <header className="py-4 bg-primary sticky top-0">
+    <header className="py-4 bg-primary sticky top-0 z-50">
       <div className="container mx-auto">
         {/* 12.03.2025 SHU YERGA KELIB TUHTATDIM 41-MIN:15-S */}
         <div className="flex items-center justify-between">
