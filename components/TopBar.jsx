@@ -2,7 +2,7 @@ import { RiPhoneFill, RiMailFill } from "react-icons/ri";
 import Socials from "./Socials";
 const TopBar = () => {
   return (
-    <section
+    <div
       id="home"
       className="py-4 xl:h-16 xl:py-0 bg-gradient-to-t from-[#ffc221] to-[#ffd76e] flex items-center"
     >
@@ -32,7 +32,7 @@ const TopBar = () => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
