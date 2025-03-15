@@ -144,6 +144,6 @@
     @apply text-2xl font-semibold;
   }
   .container {
-    @apply px-12;
+    @apply px-5 xl:px-12;
   }
 }
