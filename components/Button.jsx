@@ -5,13 +5,13 @@ const Button = ({ text, bgcolor, textColor }) => {
     <button
       className={`${
         bgcolor || "bg-chart-4"
-      } ${textColor} w-[200px] h:[54px] py-[5px] pl-[10px] pr-[5px] flex items-center justify-between min-w[200px] group`}
+      } ${textColor} h:[54px] min-w[200px] group flex w-[200px] items-center justify-between py-[5px] pr-[5px] pl-[10px]`}
     >
-      <div className="flex-1 text-center tracking-[1.2px] font-primary font-bold text-sm uppercase">
+      <div className="font-primary flex-1 text-center text-sm font-bold tracking-[1.2px] uppercase">
         {text}
       </div>
-      <div className="w-11 h-11 bg-primary flex items-center justify-center ">
-        <RiArrowRightUpLine className="text-secondary text-xl group-hover:rotate-45 duration-200 transition-transform" />
+      <div className="bg-primary flex h-11 w-11 items-center justify-center">
+        <RiArrowRightUpLine className="text-secondary text-xl transition-transform duration-200 group-hover:rotate-45" />
       </div>
     </button>
   );

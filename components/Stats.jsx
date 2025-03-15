@@ -2,7 +2,6 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import CountUp from "react-countup";
-import { User } from "lucide-react";
 const statsData = [
   {
     endCountNum: 99,
@@ -30,9 +29,9 @@ const Stats = () => {
   const inView = useInView(ref, { treshold: 0.2 });
 
   return (
-    <div ref={ref} className="mt-12 xl:mt-32 bg-primary py-10 w-full">
+    <div ref={ref} className="bg-primary mt-12 w-full py-10 xl:mt-32">
       <div className="container mx-auto h-full">
-        <div className="text-secondary flex flex-col items-center justify-between gap-12 text-center xl:flex-row xl:text-left h-full">
+        <div className="text-secondary flex h-full flex-col items-center justify-between gap-12 text-center xl:flex-row xl:text-left">
           {statsData.map((item, index) => {
             return (
               <div key={index} className="w-full">

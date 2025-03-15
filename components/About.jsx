@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="pt-16 xl:pt-32">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-12 xl:gap-0 xl:flex-row xl:items-center">
+        <div className="flex flex-col gap-12 xl:flex-row xl:items-center xl:gap-0">
           {/* text */}
           <div className="flex-1">
             <div className="max-w-[540px]">
@@ -18,7 +18,7 @@ const About = () => {
                 Molestiae libero recusandae aut officiis nihil nulla, voluptate
                 quam itaque odit sapiente earum architecto, unde est qui!
               </p>
-              <div className="w-max flex flex-col text-right mb-10">
+              <div className="mb-10 flex w-max flex-col text-right">
                 <Image
                   src="/assets/img/about/signature.svg"
                   width={154}
@@ -33,8 +33,8 @@ const About = () => {
           </div>
           {/* img */}
           <div className="flex-1 xl:flex xl:justify-center">
-            <div className="relative xl:w-[444px] xl:h-[493px]">
-              <div className="hidden absolute xl:flex xl:w-[444px] xl:h-[493px] bg-amber-400 -left-4 -top-4 -z-10"></div>
+            <div className="relative xl:h-[493px] xl:w-[444px]">
+              <div className="absolute -top-4 -left-4 -z-10 hidden bg-amber-400 xl:flex xl:h-[493px] xl:w-[444px]"></div>
               <Image
                 src="/assets/img/about/img.jpg"
                 alt="img.jpg"

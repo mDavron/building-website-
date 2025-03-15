@@ -28,7 +28,7 @@ function SheetOverlay({ className, ...props }) {
       data-slot="sheet-overlay"
       className={cn(
         "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/80",
-        className
+        className,
       )}
       {...props}
     />
@@ -51,12 +51,12 @@ function SheetContent({ className, children, side = "right", ...props }) {
             "data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top inset-x-0 top-0 h-auto border-b",
           side === "bottom" &&
             "data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom inset-x-0 bottom-0 h-auto border-t",
-          className
+          className,
         )}
         {...props}
       >
         {children}
-        <SheetPrimitive.Close className="w-11 h-11 items-center justify-center  focus:ring-ring data-[state=open]:bg-secondary absolute top-7 right-7 opacity-70 transition-opacity hover:opacity-100  focus:outline-hidden disabled:pointer-events-none">
+        <SheetPrimitive.Close className="focus:ring-ring data-[state=open]:bg-secondary absolute top-7 right-7 h-11 w-11 items-center justify-center opacity-70 transition-opacity hover:opacity-100 focus:outline-hidden disabled:pointer-events-none">
           <XIcon className="size-7" />
           <span className="sr-only">Close</span>
         </SheetPrimitive.Close>

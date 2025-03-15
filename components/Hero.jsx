@@ -4,12 +4,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="h-[70vh] bg-[url(/assets/img/hero/bg.jpg)] bg-no-repeat bg-cover bg-center relative"
+      className="relative h-[70vh] bg-[url(/assets/img/hero/bg.jpg)] bg-cover bg-center bg-no-repeat"
     >
       {/* overlay */}
-      <div className="absolute inset-0 bg-gradient-to-l from-black/0 via-black/50 to-black/70 z-10"></div>
-      <div className="container mx-auto flex items-center h-full">
-        <div className="z-20 text-secondary text-center xl:text-left flex flex-col justify-center items-center xl:items-start max-w-[608px]">
+      <div className="absolute inset-0 z-10 bg-gradient-to-l from-black/0 via-black/50 to-black/70"></div>
+      <div className="container mx-auto flex h-full items-center">
+        <div className="text-secondary z-20 flex max-w-[608px] flex-col items-center justify-center text-center xl:items-start xl:text-left">
           <h1 className="h1 text-secondary mb-4">
             <span className="text-chart-4">Building </span>
             robust lasting solutions

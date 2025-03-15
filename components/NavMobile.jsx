@@ -16,16 +16,16 @@ import { Link as ScrollLink } from "react-scroll";
 const NavMobile = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="xl:hidden z-50">
+    <div className="z-50 xl:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger
           onClick={() => setIsOpen(true)}
-          className="text-white flex items-center justify-center text-3xl"
+          className="flex items-center justify-center text-3xl text-white"
         >
           <RiMenu3Fill />
         </SheetTrigger>
         <SheetContent className="bg-primary text-secondary border-none">
-          <div className="flex flex-col items-center h-full justify-between pt-16 pb-8 ">
+          <div className="flex h-full flex-col items-center justify-between pt-16 pb-8">
             <SheetHeader>
               <SheetTitle>
                 <Logo />
@@ -34,12 +34,12 @@ const NavMobile = ({ links }) => {
                 Navigation menu
               </SheetDescription>
             </SheetHeader>
-            <ul className="w-full flex flex-col gap-10 justify-center text-center">
+            <ul className="flex w-full flex-col justify-center gap-10 text-center">
               {links.map((link, index) => {
                 return (
                   <li
                     key={index}
-                    className="text-secondary font-medium uppercase font-primary tracking-[1.2px]"
+                    className="text-secondary font-primary font-medium tracking-[1.2px] uppercase"
                   >
                     <ScrollLink
                       to={link.path}
