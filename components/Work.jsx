@@ -1,6 +1,10 @@
+import Link from "next/link";
+import Image from "next/image";
+import PreTitle from "./PreTitle";
+
 const Work = () => {
   return (
-    <div className="h-screen bg-yellow-200" id="projects">
+    <div id="projects" className="">
       Work
     </div>
   );

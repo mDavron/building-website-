@@ -2,15 +2,14 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsTrigger, TabsList } from "./ui/tabs";
 import Button from "./Button";
-// import Image from "next/image";
+import Image from "next/image";
+
 import {
   PiWallFill,
   PiPaintRollerFill,
   PiWrenchFill,
   PiUserGearFill,
 } from "react-icons/pi";
-import { RiAlignItemBottomFill } from "react-icons/ri";
-import Image from "next/image";
 import PreTitle from "./PreTitle";
 
 const serviceData = [
@@ -122,7 +121,7 @@ const Services = () => {
                   <div
                     className={`absolute left-0 flex h-[100px] w-[100px] items-center justify-center ${activeTab === item.name ? "bg-black text-white" : "bg-chart-4 text-primary"}`}
                   >
-                    <div className="text-4xl">{item.icon}</div>
+                    <div style={{ fontSize: 100 }}>{item.icon}</div>
                   </div>
                   <div className="font-primary w-[10px] text-base font-semibold tracking-[.6px] uppercase">
                     {item.name}
