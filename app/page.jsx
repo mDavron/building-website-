@@ -25,8 +25,8 @@ const Home = () => {
       <Stats />
       <Services />
       <Work />
-      <Contact />
       <Testimonials />
+      <Contact />
       <Faq />
       <Footer />
     </div>

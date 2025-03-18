@@ -116,14 +116,14 @@ const Services = () => {
                 <TabsTrigger
                   key={item.name}
                   value={item.name}
-                  className="relative flex h-[100px] w-full items-center rounded-none p-0 shadow outline-none"
+                  className="group relative flex h-[100px] w-full items-center rounded-none p-0 shadow outline-none"
                 >
                   <div
-                    className={`absolute left-0 flex h-[100px] w-[100px] items-center justify-center ${activeTab === item.name ? "bg-black text-white" : "bg-chart-4 text-primary"}`}
+                    className={`absolute left-0 flex h-[100px] w-[100px] items-center justify-center ${activeTab === item.name ? "bg-black text-white" : "bg-chart-4 text-primary"} transition-colors group-hover:bg-black group-hover:text-white`}
                   >
                     <div style={{ fontSize: 100 }}>{item.icon}</div>
                   </div>
-                  <div className="font-primary w-[10px] text-base font-semibold tracking-[.6px] uppercase">
+                  <div className="font-primary w-[10px] cursor-pointer text-base font-semibold tracking-[.6px] uppercase">
                     {item.name}
                   </div>
                 </TabsTrigger>
