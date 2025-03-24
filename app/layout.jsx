@@ -1,4 +1,4 @@
-import { Barlow, DM_Sans, Geist, Geist_Mono } from "next/font/google";
+import { Barlow, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const dmSans = DM_Sans({
