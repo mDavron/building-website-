@@ -81,7 +81,7 @@ const Slider = ({ text, bgcolor, textColor }) => {
         </div>
       </SwiperSlide>
       {/* Prev & Next Buttons */}
-      <div>Buttons</div>
+      <div>Buttons start</div>
     </Swiper>
   );
 };
