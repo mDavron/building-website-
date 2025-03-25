@@ -20,7 +20,7 @@ const Testimonials = () => {
             <Button text="Work with us" />
           </div>
           {/* img & slider */}
-          <div className="flex-1">
+          <div className="flex flex-1 flex-col xl:flex-row xl:justify-end">
             <div className="relative hidden h-[570px] bg-amber-300 lg:flex lg:w-[580px]">
               <Image
                 src="/assets/img/testimonials/img.jpg"
@@ -30,7 +30,15 @@ const Testimonials = () => {
                 className="absolute object-cover"
               />
             </div>
-            <div className="relative max-w-max bg-pink-400 lg:absolute lg:right-[320px] lg:bottom-0">
+            <div className="relative max-w-max lg:absolute lg:right-[170px] lg:bottom-0">
+              {/* Quote icon svg */}
+              <Image
+                src="/assets/img/testimonials/quote.svg"
+                alt=""
+                width={54}
+                height={36}
+                className="absolute -top-4 left-[60px] z-20"
+              />
               <Slider />
             </div>
           </div>
