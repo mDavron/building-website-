@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import 'swiper/css'
 import 'swiper/css/navigation'
+import SliderBtns from "./SliderBtns";
 
 
 
@@ -81,7 +82,7 @@ const Slider = ({ text, bgcolor, textColor }) => {
         </div>
       </SwiperSlide>
       {/* Prev & Next Buttons */}
-      <div>Buttons start</div>
+      <SliderBtns/>
     </Swiper>
   );
 };
