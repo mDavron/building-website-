@@ -21,13 +21,13 @@ const Home = () => {
       <TopBar />
       <Header />
       <Hero />
-      <About />
+      {/* <About />
       <Stats />
       <Services />
       <Work />
-      <Testimonials />
-      <Contact />
+      <Testimonials /> */}
       <Faq />
+      <Contact />
       <Footer />
     </div>
   );

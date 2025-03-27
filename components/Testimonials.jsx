@@ -2,7 +2,6 @@ import Image from "next/image";
 import PreTitle from "./PreTitle";
 import Button from "./Button";
 import Slider from "./Slider";
-Button;
 const Testimonials = () => {
   return (
     <section id="testimonials" className="pt-16 lg:pt-32">

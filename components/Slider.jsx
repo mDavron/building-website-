@@ -6,7 +6,6 @@ import 'swiper/css/navigation'
 import SliderBtns from "./SliderBtns";
 
 
-
 const Slider = ({ text, bgcolor, textColor }) => {
   const swiper = useSwiper();
 
